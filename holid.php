@@ -173,6 +173,7 @@ function holid_ads_code($attrs){
     print_r($attrs);
     echo '</pre>';*/
     if($attrs['ads_section'] != ''){
-      echo esc_html( '<div class="holidAds '.$attrs['ads_section'].'"></div>' );
+     // echo esc_html( '<div class="holidAds '.$attrs['ads_section'].'"></div>' );
+      echo  '<div class="holidAds '. esc_html( $attrs['ads_section'] ).'"></div>';
     }   
 }
